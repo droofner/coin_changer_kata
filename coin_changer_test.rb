@@ -2,14 +2,9 @@ require "minitest/autorun"
 require_relative "coin_changer_kata.rb"
 
 class TestTicket <Minitest::Test
-	def test_1_cent
-		expected = "penny"
-		assert_equal("penny",expected["penny"])
+	def test_for_nickel_to_return_1_for_5
+			assert_equal({:quarter=> 0, :dime => 0, :nickel => 1, :penny=> 0}, money(5))
 	end
 
-	def test_11_cent
-		expected = "dime" & "penny"
-		assert_equal("dime" & "penny",expected[dime & penny])
-	end
-
+	
 end

@@ -6,21 +6,20 @@
 # if you have 31 cents you should return {:quater => 1, :nickel => 1, :penny =>1"}; 
 #if 93 cents {:quarter => 3, :dime => 1, nickel =>1, penny: => 3}
 #build your coin_changer using test. commit to git after every test.
-def coin_changer_kata
-	coin Hash.new ("coin")
-	coin ={"25" => "quarter", "10" => "dime", "5" => "nickel", "1" => "penny"}
-	keys = coin.keys
+def money(change)
+
+	coins_value  = {:quarter => 25, :dime => 10, :nickel => 5, :penny=> 1}
+	correct_change = {:quarter => 0, :dime => 0, :nickel => 0, :penny=> 0}
+	coins_value.each do |coin, value|
+		while 
+			value <= change
+		correct_change[coin] += 1	
+		change -= value			
+		end
+	end	
+	correct_change
 end
 
- puts ("keys")
 
+ 
 
-# 	my_hash {"quarter" =>25, 
-# 		"dime" =>10,
-# 		"nickel" =>5,
-# 		"penny" =>1}
-# 	puts my_hash["quarter"]
-# 	puts my_hash["dime"]
-# 	puts my_hash["nickel"]
-# 	puts my_hash["penny"]
-# end
