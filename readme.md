@@ -23,3 +23,5 @@ Now I'v run a test for 25 cents to return a quarter I wrote another if statement
 Now I ran a test for 41 cents to return 1 quarter, 1 dime, 1 nickel, 1 penny and it passed
 so now I ran a test for 50 cents and it failed so I changed the code a little
 now the code for the quarter is like the one for the dimes I added the coins = cents/25 and the cents = cents -(25 * coins).
+I also ran a test for 91 cents to return 3 quarters, 1 dime, 1 nickel, and 1 penny and it passed
+ 
