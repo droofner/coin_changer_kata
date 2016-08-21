@@ -9,8 +9,10 @@ so I wrote an if statment saying if cents is >0 the change hash would be a penny
 I ran the test and it worked.
 Now I wanted to run a test to for 2 cents to return a hash with 2 pennies
 I just changed the code for the 1 penny to have the penny = to cents instead of 1 this way it will return enough cents up to 4 
-Now I'm want to test for 5 cents to return 1 nickel
+Now I'm wanting to test for 5 cents to return 1 nickel
 so I wrote another if statement saying  if cents >=5 the change hash would be a nickel which  is equal to 5 cents.
 Now I tested for 6 cents to return 1 nickel and 1 penny, It didn't so I had to change the code a little
 I added to the code so the cents hash would take the nickle out of the change and put the amount of pennies needed to make the rest of the change.
 Testing for 10 cents to return a dime so I wrote another if statement saying if cents >= 10 the hash would return a dime which is = 10 cents 
+next I tested for 11 cents to return 1 dime and 1 penny 
+I changed the code by add cents to remove the dime then put the rest of the change 

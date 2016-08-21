@@ -20,4 +20,7 @@ class TestCoinChangerHomework < Minitest::Test
 	def test_ten_cents_returns_hash_with_one_dime
 		assert_equal({:dime =>1},generate_change(10))
 	end
+	def test_eleven_cents_returns_hash_with_1_dime_and_1_penny
+		assert_equal({:dime =>1,:penny =>1},generate_change(11))
+	end
 end
