@@ -20,5 +20,16 @@ class TestNewCoinChanger < Minitest::Test
 	def test_seven_cents_returns_hash_with_one_nickel_and_two_penny
 		assert_equal({:nickel => 1,:penny => 2},generate_change(7))
 	end
-	
+	def test_ten_cents_returns_hash_with_one_dime
+		assert_equal({:dime =>1},generate_change(10))
+	end
+	def test_eleven_cents_returns_hash_with_1_dime_and_1_penny
+		assert_equal({:dime =>1,:penny =>1},generate_change(11))
+	end
+	def test_fifteen_cents_returns_hash_with_1_dime_and_1_nickel
+		assert_equal({:dime =>1,:nickel =>1},generate_change(15))
+	end
+	def test_twenty_cents_returns_hash_with_2_dime
+		assert_equal({:dime =>2},generate_change(20))
+	end
 end
