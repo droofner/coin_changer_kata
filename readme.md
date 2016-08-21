@@ -19,3 +19,7 @@ I changed the code by add cents to remove the dime then put the rest of the chan
 I ran a test for 16 cents to return 1 dime, 1 nickel, 1 penny and it worked
 so now I ran a test for 20 cents to return 2 dimes and it failed
 I changed the code for 1 dime a little I add a coins to = cents divided 10 and then changed the cents to = cents - 10 times the coins.
+Now I'v run a test for 25 cents to return a quarter I wrote another if statement saying if cents >= 25 the change hash would be a quarter.
+Now I ran a test for 41 cents to return 1 quarter, 1 dime, 1 nickel, 1 penny and it passed
+so now I ran a test for 50 cents and it failed so I changed the code a little
+now the code for the quarter is like the one for the dimes I added the coins = cents/25 and the cents = cents -(25 * coins).

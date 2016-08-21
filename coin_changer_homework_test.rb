@@ -32,4 +32,13 @@ class TestCoinChangerHomework < Minitest::Test
 	def test_twenty_cents_returns_hash_with_2_dime
 		assert_equal({:dime =>2},generate_change(20))
 	end
+	def test_twenty_five_cents_returns_hash_with_1_quarter
+		assert_equal({:quarter =>1},generate_change(25))
+	end
+	def test_forty_one_cents_returns_hash_with_1_quarter_1_dime_1_nickel_and_1_penny
+		assert_equal({:quarter =>1,:dime =>1,:nickel =>1,:penny =>1},generate_change(41))
+	end
+	def test_fifty_cents_returns_hash_with_2_quarters
+		assert_equal({:quarter =>2},generate_change(50))
+	end
 end
