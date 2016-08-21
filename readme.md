@@ -7,3 +7,5 @@ I want to test for zero cents to return an empty hash. It did.
 Now I want to test for one cent to return a hash with one penny
 so I wrote an if statment say if cents is >0 the change hash would be a penny with is equal to one cent.
 I ran the test and it worked.
+Now I wanted to run a test to for 2 cents to return a hash with 2 pennies
+I just changed the code for the 1 penny to have the penny = to cents instead of 1 this way it will return enough cents up to 4 
