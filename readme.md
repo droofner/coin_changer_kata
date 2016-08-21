@@ -16,3 +16,4 @@ I added to the code so the cents hash would take the nickle out of the change an
 Testing for 10 cents to return a dime so I wrote another if statement saying if cents >= 10 the hash would return a dime which is = 10 cents 
 next I tested for 11 cents to return 1 dime and 1 penny 
 I changed the code by add cents to remove the dime then put the rest of the change 
+I ran a test for 16 cents to return 1 dime, 1 nickel, 1 penny and it worked
