@@ -13,4 +13,4 @@ Now I'm want to test for 5 cents to return 1 nickel
 so I wrote another if statement saying  if cents >=5 the change hash would be a nickel which  is equal to 5 cents.
 Now I tested for 6 cents to return 1 nickel and 1 penny, It didn't so I had to change the code a little
 I added to the code so the cents hash would take the nickle out of the change and put the amount of pennies needed to make the rest of the change.
- 
+Testing for 10 cents to return a dime so I wrote another if statement saying if cents >= 10 the hash would return a dime which is = 10 cents 
