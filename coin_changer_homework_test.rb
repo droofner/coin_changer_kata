@@ -29,4 +29,7 @@ class TestCoinChangerHomework < Minitest::Test
 	def test_sixteen_cents_returns_hash_with_1_dime_1_nickel_and_1_penny
 		assert_equal({:dime =>1,:nickel =>1, :penny =>1},generate_change(16))
 	end
+	def test_twenty_cents_returns_hash_with_2_dime
+		assert_equal({:dime =>2},generate_change(20))
+	end
 end
